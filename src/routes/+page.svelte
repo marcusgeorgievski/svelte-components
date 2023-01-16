@@ -8,14 +8,15 @@
 </script>
 <!---------------------------------------------------------------------------------------->
 
-<h1 class="text-4xl font-bold pt-12 border-b inline-block">
+<h1 class="text-4xl font-bold pt-12 border-b inline-block mb-12">
     {selection}
 </h1>
 
-<!-- Content - grid or flex -->
+<!-- Components - grid or flex -->
 <div> 
 
     <!-- Dynamically display components -->
+    <p class="text-xl">⚠️ Code base change in progress</p>
 
 </div>
 <!---------------------------------------------------------------------------------------->

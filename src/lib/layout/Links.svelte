@@ -12,15 +12,16 @@
     $: console.log('THEME: ',theme)
 </script>
 
-<div class="absolute right-4 top-4 flex gap-2 items-center">
+<div class="absolute right-4 top-4 flex gap-2 items-center
+md:text-5xl text-4xl">
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div 
     on:click={() => setTheme(theme)}
     class="cursor-pointer">
-        <iconify-icon class="flex text-4xl" icon="ph:{theme?'sun':'moon'}-thin"></iconify-icon>
+        <iconify-icon class="flex" icon="ph:{theme?'sun':'moon'}-thin"></iconify-icon>
     </div>
 
     <a href="https://github.com/marcusgeorgievski">
-        <iconify-icon class="flex text-5xl" icon="mdi:github"></iconify-icon>
+        <iconify-icon class="flex" icon="mdi:github"></iconify-icon>
     </a>
 </div>

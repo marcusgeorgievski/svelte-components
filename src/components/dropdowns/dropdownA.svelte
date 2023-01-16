@@ -11,7 +11,11 @@
     const setSelection = (selection) => cmpSelection.set(selection)
 
     // Handle selection
-    const handleSelection = (option) => selection = option
+    const handleSelection = (selected) => {
+        selection = selected
+        setSelection(selection)
+        open = false
+    }
 </script>
 <!---------------------------------------------------------------------------------------->
 
@@ -36,7 +40,7 @@ class="flex flex-col inline-block gap-2 relative">
         <ul class="w-full flex flex-col justify-center items-center gap-1 text-center">
             {#each options as option}
                 <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <li on:click={()=>setSelection(option.type)} 
+                <li on:click={()=>handleSelection(option.type)} 
                 class="w-full hover:bg-slate-500 py-2 rounded cursor-pointer capitalize
                 font-bold">
                     <span class="mr-2">{option.emoji}</span> 
